@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(36, 36, 36);
+    color: rgb(220, 220, 220);
+}
+
+
+.nav-bar {
+    border: solid 1px;
+}
+
+.content {
+    padding-top: 16px;
+    margin: 16px auto;
+}
+
+.column-1 {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.form-control{
+    width: 100%;
+}
+
+#name, #message {
+    padding: 8px;
+    background-color: rgb(36, 36, 36);
+    color: rgb(220, 220, 220);
+}
+
+#message::placeholder {
+    color: rgb(200, 200, 200);
+    opacity: 1;
+}
+
+/* .column-2 {
+} */
+
+.poster {
+    margin-bottom: 96px;
+}
+
+.post {
+    display: flex;
+    border: solid 1px;
+    margin-bottom: 16px;
+}
+
+.post__image, .post__content {
+    padding: 8px;
+}

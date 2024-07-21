@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Show it's not fixed to the top */
+body {
+    min-height: 75rem;
+  }
+
+.nav-bar {
+    border: solid 1px;
+}
+
+.content {
+    padding-top: 16px;
+    margin: 16px auto;
+}
+
+.column-1 {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.form-control{
+    width: 100%;
+}
+
+
+/* .column-2 {
+} */
+
+.poster {
+    margin-bottom: 96px;
+}
+
+.post {
+    display: flex;
+    border: solid 1px;
+    margin-bottom: 16px;
+}
+
+.post__image, .post__content {
+    padding: 8px;
+}
+
