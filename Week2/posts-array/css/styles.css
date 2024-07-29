@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.content {
+    max-width:800px;
+    margin: 0 auto;
+}
+
+.post {
+    border-color: black;
+    border-style: solid;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.post__user {
+    text-align: center;
+}
+
+.post__content {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
