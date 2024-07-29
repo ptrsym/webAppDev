@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.content {
+    max-width:800px;
+    margin: 0 auto;
+}
+
+.post {
+    border-color: black;
+    border-style: solid;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+}
+
+.post__user {
+    text-align: center;
+}
+
+.post__content {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.comments {
+    margin: 50px;
+}
+
+.post__comments {
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    margin: 24px 0;
+}
+
+.comments__comment {
+    margin-left: 20px;
+}
+
+
+
