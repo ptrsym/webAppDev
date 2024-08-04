@@ -1,20 +1,10 @@
 <?php 
-require './classes/post.php';
+require './classes/postSeeder.php';
+$posts = wad\PostSeeder::seed();
+
 
 use wad\Post;
 use wad\Comment;
-
-
-
-$post1 = new Post('Garfield', 'I hate Mondays.','./images/garf.webp', '28/07/24');
-$post2 = new Post('Jon', 'garf fat.','./images/john.png', '29/07/24');
-$post3 = new Post('Odie', '*pants*','./images/odie.avif', '30/07/24');
-
-$post1->addComment(new Comment('erol', 'hu haw'));
-$post2->addComment(new Comment('pete', 'garf fat'));
-
-$posts = array($post1, $post2, $post3)
-
 ?>
 
 
@@ -24,7 +14,7 @@ $posts = array($post1, $post2, $post3)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts</title>
+    <title>task3</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>

@@ -2,7 +2,7 @@
 namespace wad;
 
 
-/// a comment is has a username and an associated comment attached to a post
+/// a comment has a username and an associated comment and is a member variable of a post class
 class Comment {
 
     // member variables
