@@ -44,6 +44,16 @@ if (count($pms) == 0) {
 ?>
 <h3>Results</h3>
 <p>No results found.</p>
+<form method="get" action="results.php">
+  <table>
+    <tr><td>Name: </td><td><input type="text" name="name" value="<?=$name?>"></td></tr>
+    <tr><td>Year: </td><td><input type="text" name="year" value="<?=$year?>"></td></tr>
+    <tr><td>State: </td><td><input type="text" name="state" value="<?=$state?>"></td></tr>
+    <tr><td colspan=2><input type="submit" value="Search">
+                      <input type="reset" value="Reset"></td></tr>
+  <table>
+  </form>
+<p><a href="index.html">New search</a></p>
 <?php
 } 
 elseif (empty($error == FALSE)){
@@ -62,6 +72,17 @@ elseif (empty($error == FALSE)){
 <?php }
 else {
 ?>
+<h3>Results</h3>
+  <form method="get" action="results.php">
+  <table>
+    <tr><td>Name: </td><td><input type="text" name="name" value="<?=$name?>"></td></tr>
+    <tr><td>Year: </td><td><input type="text" name="year" value="<?=$year?>"></td></tr>
+    <tr><td>State: </td><td><input type="text" name="state" value="<?=$state?>"></td></tr>
+    <tr><td colspan=2><input type="submit" value="Search">
+                      <input type="reset" value="Reset"></td></tr>
+  <table>
+  </form>
+  <p><a href="index.html">New search</a></p>
 <table class="bordered">
 <thead>
 <tr><th>No.</th><th>Name</th><th>From</th><th>To</th><th>Duration</th><th>Party</th><th>State</th></tr>
@@ -78,8 +99,6 @@ foreach($pms as $pm) {
 <?php
 }
 ?>
-
-<p><a href="index.html">New search</a></p>
 
 <hr>
 <p>
